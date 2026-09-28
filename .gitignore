@@ -4,7 +4,6 @@ __pycache__/
 runs/
 checkpoints/
 *.pt
-*.h5
 *.onnx
 *.pkl
 database/encodings.pkl
