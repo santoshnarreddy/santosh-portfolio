@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+runs/
+checkpoints/
+*.pt
+*.h5
+*.onnx
+*.pkl
+database/encodings.pkl
+logs/*.csv
+.env
+venv/
+.venv/
+.idea/
+.vscode/

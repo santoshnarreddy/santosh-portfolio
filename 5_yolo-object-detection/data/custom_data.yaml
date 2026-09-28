@@ -1,0 +1,50 @@
+# Custom Dataset Configuration
+# Author: Santosh Narreddy
+#
+# YOLO format dataset structure:
+#   data/
+#     custom_data.yaml    ← this file
+#     images/
+#       train/  ← training images (.jpg/.png)
+#       val/    ← validation images
+#       test/   ← test images (optional)
+#     labels/
+#       train/  ← annotation .txt files (one per image)
+#       val/
+#       test/
+#
+# Each .txt annotation file has one row per object:
+#   class_id  cx  cy  width  height
+#   (all values normalized 0–1 relative to image size)
+#
+# Example row: 0 0.512 0.348 0.220 0.185
+#
+# Recommended annotation tools:
+#   - LabelImg (free, desktop): https://github.com/HumanSignal/labelImg
+#   - Roboflow (online, free tier): https://roboflow.com
+#   - CVAT (self-hosted): https://cvat.ai
+
+# Dataset root path (relative to train_custom.py, or absolute)
+path: data/custom_dataset
+
+# Image directories (relative to 'path' above)
+train: images/train
+val:   images/val
+test:  images/test   # optional
+
+# Number of classes
+nc: 3
+
+# Class names — EDIT THESE to match your dataset
+names:
+  0: class_one
+  1: class_two
+  2: class_three
+
+# ── Notes ──────────────────────────────────────────────────────────────────────
+# Tips for good results:
+#   - Aim for 200–500 images per class minimum
+#   - Balance class distribution — avoid heavy imbalance
+#   - Include diverse backgrounds, lighting, and angles
+#   - Validate annotations are correct before training
+#   - Start with yolov8n for fast experiments, upgrade to yolov8s for final

@@ -1,0 +1,9 @@
+mediapipe>=0.10.0
+opencv-python>=4.7.0
+pyautogui>=0.9.54
+numpy>=1.23.0
+# Windows audio control (optional)
+# pycaw>=20220416
+# comtypes>=1.2.0
+# Cross-platform brightness (optional)
+# screen-brightness-control>=0.22.0

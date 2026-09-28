@@ -1,0 +1,5 @@
+ultralytics>=8.0.0
+opencv-python>=4.7.0
+numpy>=1.23.0
+# GPU support (optional — install the CUDA version of torch separately):
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
